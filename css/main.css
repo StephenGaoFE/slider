@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+#container {
+  width: 520px;
+  height: 280px;
+  border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+  /*左右溢出的图片隐藏*/
+}
+#container:hover .arrow {
+  display: block;
+  /* 鼠标移到图片上显示出箭头*/
+}
+#list {
+  width: 3640px;
+  /*设定了宽度后，所有的图片都可以放在一行内*/
+  height: 280px;
+  position: absolute;
+  z-index: 1;
+  transition: left 1s ease-in-out;
+  -moz-transition: left 1s ease-in-out;
+  /* Firefox 4 */
+  -webkit-transition: left 1s ease-in-out;
+  /* Safari and Chrome */
+  -o-transition: left 1s ease-in-out;
+  /* Opera */
+}
+#list img {
+  float: left;
+}
+#buttons {
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  z-index: 2;
+  bottom: 20px;
+  left: 210px;
+}
+#buttons span {
+  cursor: pointer;
+  /* 鼠标变成一个手指*/
+  float: left;
+  border: 1px solid #FFF;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #B7B7B7;
+  margin-right: 5px;
+}
+#buttons .on {
+  background: #F40;
+}
+.arrow {
+  cursor: pointer;
+  display: none;
+  /*默认箭头是不显示的*/
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+.arrow:hover {
+  /*鼠标移动到箭头上，箭头的颜色加深*/
+  background-color: rgba(0, 0, 0, 0.7);
+  /*a=1,不透明*/
+}
+#prev {
+  left: 20px;
+}
+#next {
+  right: 20px;
+}
+.wrap {
+  justify-content: center;
+  /*子元素水平居中*/
+  align-items: center;
+  /*字元素垂直居中*/
+  display: flex;
+  display: -webkit-flex;
+}
+.description {
+  margin: 20px auto;
+  text-align: center;
+}
