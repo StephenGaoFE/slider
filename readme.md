@@ -32,7 +32,7 @@ Q:怎么配置图片全局尺寸
 A:在css/main.less，js/main.js里面，很容易找到
 
 Q:标题太难看了，不想要标题  
-A:把index.html里的<h1></h1>标签删掉即可
+A:把index.html里的```<h1></h1>```标签删掉即可
 
 
 
