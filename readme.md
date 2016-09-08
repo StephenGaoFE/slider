@@ -9,7 +9,7 @@
 - 图片高度和宽度可以全局配置，不懂技术的小白也会用，So Easy!
 
 ## version
-- v1.0 preAlpha
+- v1.0 PreAlpha
 
 ## 使用组件
 - fontawesome
@@ -17,10 +17,11 @@
 ## 使用说明
 ``` 
 // 如果缺少组件的话，bower intall一下
+// 若果有权限的问题，把相应文件给予777权限
 $ npm install bower -g
 $ bower install
-//若果有权限的问题，把相应文件给予777权限
 
+// 这里的意思是把less文件编译为css，如果不修改less文件则不需要
 $ npm install less -g
 $ lessc main.less > main.css
 or use Koala
@@ -30,7 +31,7 @@ or use Koala
 Q:怎么配置图片全局尺寸  
 A:在css/main.less，js/main.js里面，很容易找到
 
-Q:标题太难看了，不想要标题
+Q:标题太难看了，不想要标题  
 A:把index.html里的<h1></h1>标签删掉即可
 
 
